@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MT_ListFusen2.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FontTB" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">メイリオ, 9.75pt</Value>
+    </Setting>
+    <Setting Name="FontTV" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">メイリオ, 10pt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
