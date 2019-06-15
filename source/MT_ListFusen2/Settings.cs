@@ -218,6 +218,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("前回終了時の選択メモ");
+				nodeSelPath = null;
 			}
 			// 1～4 ウインドウの表示位置と大きさ
 			try
@@ -230,6 +231,10 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("ウインドウの表示位置と大きさ");
+				winPosX = 0;
+				winPosY = 0;
+				winSizeX = 668;
+				winSizeY = 437;
 			}
 			// 5 画面分割ラインの位置
 			try
@@ -239,6 +244,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("画面分割ラインの位置");
+				splitDistance = 181;
 			}
 			// 6～8 ツールのメインカラー
 			try
@@ -248,6 +254,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("ウインドウ端のカラー");
+				mainColor = Color.FromArgb(191, 92, 55);
 			}
 			// 9～11 メモのフォントカラー
 			try
@@ -257,6 +264,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("メモのフォントカラー");
+				fontColorTB = Color.FromArgb(190, 185, 180);
 			}
 			// 12～14 ツリーのフォントカラー
 			try
@@ -266,6 +274,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("ツリーのフォントカラー");
+				fontColorTV = Color.FromArgb(190, 185, 180);
 			}
 			// 15 最前面表示
 			try
@@ -275,6 +284,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("最前面表示");
+				frontView = false;
 			}
 			// 16 バルーンヘルプの表示
 			try
@@ -284,6 +294,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("バルーンヘルプの表示");
+				toolTip = true;
 			}
 			// 17 テキストの折り返し
 			try
@@ -293,6 +304,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("テキストの折り返し");
+				wordWrap = false;
 			}
 			// 18 オートセーブ
 			try
@@ -302,6 +314,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("オートセーブ");
+				autoSave = 0;
 			}
 			// 19 非アクティブ時のセーブ
 			try
@@ -311,6 +324,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("非アクティブ時のセーブ");
+				deactiveSave = false;
 			}
 			// 20 オートバックアップ
 			try
@@ -320,6 +334,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("オートバックアップ");
+				autoBackup = 3;
 			}
 			// 21 前回のバックアップ日時
 			try
@@ -329,6 +344,7 @@ namespace MT_ListFusen2
 			catch (Exception)
 			{
 				ShowMsgErrSettings("前回のバックアップ日時");
+				prevBackup = 201801010101;
 			}
 		}
 

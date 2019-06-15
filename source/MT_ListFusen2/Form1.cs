@@ -725,8 +725,9 @@ namespace MT_ListFusen2
 
 				// XMLファイルをbackupフォルダに出力
 				string s = dateNow.ToString();
+				XmlSave(Settings.FILEPATH_BACKUP + @"\data" + s + @".xml");
 
-				XmlSave(Settings.FILEPATH_XML + "_" + s);
+				Settings.prevBackup = dateNow;
 			}
 		}
 

@@ -37,11 +37,23 @@
 			this.panelButton = new System.Windows.Forms.Panel();
 			this.panelDirty = new System.Windows.Forms.Panel();
 			this.panelLine = new System.Windows.Forms.Panel();
+			this.buttonFront = new System.Windows.Forms.Button();
+			this.buttonSave = new System.Windows.Forms.Button();
+			this.buttonSettings = new System.Windows.Forms.Button();
+			this.buttonUndo = new System.Windows.Forms.Button();
+			this.buttonExport = new System.Windows.Forms.Button();
+			this.buttonDel = new System.Windows.Forms.Button();
+			this.buttonAddC = new System.Windows.Forms.Button();
+			this.buttonAddP = new System.Windows.Forms.Button();
+			this.buttonDown = new System.Windows.Forms.Button();
+			this.buttonUp = new System.Windows.Forms.Button();
 			this.panelLabel2 = new System.Windows.Forms.Panel();
 			this.panelUP = new System.Windows.Forms.Panel();
 			this.labelSaved = new System.Windows.Forms.Label();
 			this.panelLabel1 = new System.Windows.Forms.Panel();
 			this.labelTitle = new System.Windows.Forms.Label();
+			this.pBoxMinimize = new System.Windows.Forms.PictureBox();
+			this.pBoxClose = new System.Windows.Forms.PictureBox();
 			this.panelContent = new System.Windows.Forms.Panel();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
 			this.treeView1 = new System.Windows.Forms.TreeView();
@@ -56,27 +68,15 @@
 			this.panelBlankLeftR = new System.Windows.Forms.Panel();
 			this.panelBlankTopR = new System.Windows.Forms.Panel();
 			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-			this.buttonFront = new System.Windows.Forms.Button();
-			this.buttonSave = new System.Windows.Forms.Button();
-			this.buttonSettings = new System.Windows.Forms.Button();
-			this.buttonUndo = new System.Windows.Forms.Button();
-			this.buttonExport = new System.Windows.Forms.Button();
-			this.buttonDel = new System.Windows.Forms.Button();
-			this.buttonAddC = new System.Windows.Forms.Button();
-			this.buttonAddP = new System.Windows.Forms.Button();
-			this.buttonDown = new System.Windows.Forms.Button();
-			this.buttonUp = new System.Windows.Forms.Button();
-			this.pBoxMinimize = new System.Windows.Forms.PictureBox();
-			this.pBoxClose = new System.Windows.Forms.PictureBox();
 			this.panelButton.SuspendLayout();
 			this.panelUP.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pBoxMinimize)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pBoxClose)).BeginInit();
 			this.panelContent.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
 			this.splitContainer1.Panel1.SuspendLayout();
 			this.splitContainer1.Panel2.SuspendLayout();
 			this.splitContainer1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pBoxMinimize)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pBoxClose)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panelBarTop
@@ -161,225 +161,6 @@
 			this.panelLine.Name = "panelLine";
 			this.panelLine.Size = new System.Drawing.Size(4, 26);
 			this.panelLine.TabIndex = 15;
-			// 
-			// panelLabel2
-			// 
-			this.panelLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(92)))), ((int)(((byte)(55)))));
-			this.panelLabel2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panelLabel2.Location = new System.Drawing.Point(0, 17);
-			this.panelLabel2.Name = "panelLabel2";
-			this.panelLabel2.Size = new System.Drawing.Size(5, 41);
-			this.panelLabel2.TabIndex = 1;
-			// 
-			// panelUP
-			// 
-			this.panelUP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(25)))));
-			this.panelUP.Controls.Add(this.labelSaved);
-			this.panelUP.Controls.Add(this.panelLabel1);
-			this.panelUP.Controls.Add(this.labelTitle);
-			this.panelUP.Controls.Add(this.pBoxMinimize);
-			this.panelUP.Controls.Add(this.pBoxClose);
-			this.panelUP.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelUP.Location = new System.Drawing.Point(0, 0);
-			this.panelUP.Name = "panelUP";
-			this.panelUP.Size = new System.Drawing.Size(676, 17);
-			this.panelUP.TabIndex = 0;
-			this.panelUP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelUP_MouseDown);
-			this.panelUP.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelUP_MouseMove);
-			// 
-			// labelSaved
-			// 
-			this.labelSaved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.labelSaved.AutoSize = true;
-			this.labelSaved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(200)))), ((int)(((byte)(30)))));
-			this.labelSaved.Font = new System.Drawing.Font("メイリオ", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.labelSaved.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(9)))));
-			this.labelSaved.Location = new System.Drawing.Point(559, 1);
-			this.labelSaved.Name = "labelSaved";
-			this.labelSaved.Size = new System.Drawing.Size(64, 14);
-			this.labelSaved.TabIndex = 3;
-			this.labelSaved.Text = " S A V E D ! ";
-			this.labelSaved.Visible = false;
-			// 
-			// panelLabel1
-			// 
-			this.panelLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(92)))), ((int)(((byte)(55)))));
-			this.panelLabel1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panelLabel1.Location = new System.Drawing.Point(0, 0);
-			this.panelLabel1.Name = "panelLabel1";
-			this.panelLabel1.Size = new System.Drawing.Size(5, 17);
-			this.panelLabel1.TabIndex = 2;
-			// 
-			// labelTitle
-			// 
-			this.labelTitle.AutoSize = true;
-			this.labelTitle.Font = new System.Drawing.Font("メイリオ", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(164)))), ((int)(((byte)(156)))));
-			this.labelTitle.Location = new System.Drawing.Point(12, 2);
-			this.labelTitle.Name = "labelTitle";
-			this.labelTitle.Size = new System.Drawing.Size(123, 14);
-			this.labelTitle.TabIndex = 1;
-			this.labelTitle.Text = "L I S T  F U S E N　v2.00";
-			this.labelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LabelTitle_MouseDown);
-			this.labelTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LabelTitle_MouseMove);
-			// 
-			// panelContent
-			// 
-			this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
-			this.panelContent.Controls.Add(this.splitContainer1);
-			this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panelContent.Location = new System.Drawing.Point(4, 62);
-			this.panelContent.Name = "panelContent";
-			this.panelContent.Size = new System.Drawing.Size(676, 410);
-			this.panelContent.TabIndex = 2;
-			// 
-			// splitContainer1
-			// 
-			this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-			this.splitContainer1.Name = "splitContainer1";
-			// 
-			// splitContainer1.Panel1
-			// 
-			this.splitContainer1.Panel1.Controls.Add(this.treeView1);
-			this.splitContainer1.Panel1.Controls.Add(this.panelBlankRightL);
-			this.splitContainer1.Panel1.Controls.Add(this.panelBlankBottomR);
-			this.splitContainer1.Panel1.Controls.Add(this.panelBlankLeftL);
-			this.splitContainer1.Panel1.Controls.Add(this.panelBlankTopL);
-			this.splitContainer1.Panel1.Controls.Add(this.panelLabel3);
-			// 
-			// splitContainer1.Panel2
-			// 
-			this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
-			this.splitContainer1.Panel2.Controls.Add(this.textBox1);
-			this.splitContainer1.Panel2.Controls.Add(this.panelBlankRightR);
-			this.splitContainer1.Panel2.Controls.Add(this.panelBlankBottomL);
-			this.splitContainer1.Panel2.Controls.Add(this.panelBlankLeftR);
-			this.splitContainer1.Panel2.Controls.Add(this.panelBlankTopR);
-			this.splitContainer1.Size = new System.Drawing.Size(676, 410);
-			this.splitContainer1.SplitterDistance = 200;
-			this.splitContainer1.TabIndex = 4;
-			// 
-			// treeView1
-			// 
-			this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
-			this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.treeView1.Font = new System.Drawing.Font("メイリオ", 10F);
-			this.treeView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(185)))), ((int)(((byte)(180)))));
-			this.treeView1.FullRowSelect = true;
-			this.treeView1.HideSelection = false;
-			this.treeView1.Indent = 19;
-			this.treeView1.LabelEdit = true;
-			this.treeView1.Location = new System.Drawing.Point(6, 9);
-			this.treeView1.Name = "treeView1";
-			this.treeView1.ShowLines = false;
-			this.treeView1.Size = new System.Drawing.Size(190, 392);
-			this.treeView1.TabIndex = 2;
-			this.treeView1.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.TreeView1_AfterLabelEdit);
-			this.treeView1.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.TreeView1_BeforeSelect);
-			this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeView1_AfterSelect);
-			this.treeView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TreeView1_KeyDown);
-			// 
-			// panelBlankRightL
-			// 
-			this.panelBlankRightL.Dock = System.Windows.Forms.DockStyle.Right;
-			this.panelBlankRightL.Location = new System.Drawing.Point(196, 9);
-			this.panelBlankRightL.Name = "panelBlankRightL";
-			this.panelBlankRightL.Size = new System.Drawing.Size(4, 392);
-			this.panelBlankRightL.TabIndex = 3;
-			// 
-			// panelBlankBottomR
-			// 
-			this.panelBlankBottomR.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panelBlankBottomR.Location = new System.Drawing.Point(6, 401);
-			this.panelBlankBottomR.Name = "panelBlankBottomR";
-			this.panelBlankBottomR.Size = new System.Drawing.Size(194, 9);
-			this.panelBlankBottomR.TabIndex = 3;
-			// 
-			// panelBlankLeftL
-			// 
-			this.panelBlankLeftL.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panelBlankLeftL.Location = new System.Drawing.Point(5, 9);
-			this.panelBlankLeftL.Name = "panelBlankLeftL";
-			this.panelBlankLeftL.Size = new System.Drawing.Size(1, 401);
-			this.panelBlankLeftL.TabIndex = 1;
-			// 
-			// panelBlankTopL
-			// 
-			this.panelBlankTopL.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelBlankTopL.Location = new System.Drawing.Point(5, 0);
-			this.panelBlankTopL.Name = "panelBlankTopL";
-			this.panelBlankTopL.Size = new System.Drawing.Size(195, 9);
-			this.panelBlankTopL.TabIndex = 1;
-			// 
-			// panelLabel3
-			// 
-			this.panelLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(92)))), ((int)(((byte)(55)))));
-			this.panelLabel3.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panelLabel3.Location = new System.Drawing.Point(0, 0);
-			this.panelLabel3.Name = "panelLabel3";
-			this.panelLabel3.Size = new System.Drawing.Size(5, 410);
-			this.panelLabel3.TabIndex = 0;
-			// 
-			// textBox1
-			// 
-			this.textBox1.AcceptsTab = true;
-			this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
-			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox1.Font = new System.Drawing.Font("メイリオ", 9.75F);
-			this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(185)))), ((int)(((byte)(180)))));
-			this.textBox1.Location = new System.Drawing.Point(4, 9);
-			this.textBox1.MaxLength = 200000;
-			this.textBox1.Multiline = true;
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox1.Size = new System.Drawing.Size(456, 392);
-			this.textBox1.TabIndex = 2;
-			this.textBox1.WordWrap = false;
-			this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-			this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox1_KeyDown);
-			this.textBox1.Leave += new System.EventHandler(this.TextBox1_Leave);
-			// 
-			// panelBlankRightR
-			// 
-			this.panelBlankRightR.Dock = System.Windows.Forms.DockStyle.Right;
-			this.panelBlankRightR.Location = new System.Drawing.Point(460, 9);
-			this.panelBlankRightR.Name = "panelBlankRightR";
-			this.panelBlankRightR.Size = new System.Drawing.Size(12, 392);
-			this.panelBlankRightR.TabIndex = 3;
-			// 
-			// panelBlankBottomL
-			// 
-			this.panelBlankBottomL.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panelBlankBottomL.Location = new System.Drawing.Point(4, 401);
-			this.panelBlankBottomL.Name = "panelBlankBottomL";
-			this.panelBlankBottomL.Size = new System.Drawing.Size(468, 9);
-			this.panelBlankBottomL.TabIndex = 3;
-			// 
-			// panelBlankLeftR
-			// 
-			this.panelBlankLeftR.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panelBlankLeftR.Location = new System.Drawing.Point(0, 9);
-			this.panelBlankLeftR.Name = "panelBlankLeftR";
-			this.panelBlankLeftR.Size = new System.Drawing.Size(4, 401);
-			this.panelBlankLeftR.TabIndex = 1;
-			// 
-			// panelBlankTopR
-			// 
-			this.panelBlankTopR.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelBlankTopR.Location = new System.Drawing.Point(0, 0);
-			this.panelBlankTopR.Name = "panelBlankTopR";
-			this.panelBlankTopR.Size = new System.Drawing.Size(472, 9);
-			this.panelBlankTopR.TabIndex = 1;
-			// 
-			// toolTip1
-			// 
-			this.toolTip1.AutoPopDelay = 10000;
-			this.toolTip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
-			this.toolTip1.InitialDelay = 650;
-			this.toolTip1.ReshowDelay = 100;
 			// 
 			// buttonFront
 			// 
@@ -581,6 +362,67 @@
 			this.buttonUp.MouseEnter += new System.EventHandler(this.ButtonUp_MouseEnter);
 			this.buttonUp.MouseLeave += new System.EventHandler(this.ButtonUp_MouseLeave);
 			// 
+			// panelLabel2
+			// 
+			this.panelLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(92)))), ((int)(((byte)(55)))));
+			this.panelLabel2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelLabel2.Location = new System.Drawing.Point(0, 17);
+			this.panelLabel2.Name = "panelLabel2";
+			this.panelLabel2.Size = new System.Drawing.Size(5, 41);
+			this.panelLabel2.TabIndex = 1;
+			// 
+			// panelUP
+			// 
+			this.panelUP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(25)))));
+			this.panelUP.Controls.Add(this.labelSaved);
+			this.panelUP.Controls.Add(this.panelLabel1);
+			this.panelUP.Controls.Add(this.labelTitle);
+			this.panelUP.Controls.Add(this.pBoxMinimize);
+			this.panelUP.Controls.Add(this.pBoxClose);
+			this.panelUP.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelUP.Location = new System.Drawing.Point(0, 0);
+			this.panelUP.Name = "panelUP";
+			this.panelUP.Size = new System.Drawing.Size(676, 17);
+			this.panelUP.TabIndex = 0;
+			this.panelUP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelUP_MouseDown);
+			this.panelUP.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelUP_MouseMove);
+			// 
+			// labelSaved
+			// 
+			this.labelSaved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.labelSaved.AutoSize = true;
+			this.labelSaved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(200)))), ((int)(((byte)(30)))));
+			this.labelSaved.Font = new System.Drawing.Font("メイリオ", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+			this.labelSaved.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(9)))));
+			this.labelSaved.Location = new System.Drawing.Point(559, 1);
+			this.labelSaved.Name = "labelSaved";
+			this.labelSaved.Size = new System.Drawing.Size(64, 14);
+			this.labelSaved.TabIndex = 3;
+			this.labelSaved.Text = " S A V E D ! ";
+			this.labelSaved.Visible = false;
+			// 
+			// panelLabel1
+			// 
+			this.panelLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(92)))), ((int)(((byte)(55)))));
+			this.panelLabel1.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelLabel1.Location = new System.Drawing.Point(0, 0);
+			this.panelLabel1.Name = "panelLabel1";
+			this.panelLabel1.Size = new System.Drawing.Size(5, 17);
+			this.panelLabel1.TabIndex = 2;
+			// 
+			// labelTitle
+			// 
+			this.labelTitle.AutoSize = true;
+			this.labelTitle.Font = new System.Drawing.Font("メイリオ", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+			this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(164)))), ((int)(((byte)(156)))));
+			this.labelTitle.Location = new System.Drawing.Point(12, 2);
+			this.labelTitle.Name = "labelTitle";
+			this.labelTitle.Size = new System.Drawing.Size(115, 14);
+			this.labelTitle.TabIndex = 1;
+			this.labelTitle.Text = "L I S T  F U S E N 2 .02";
+			this.labelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LabelTitle_MouseDown);
+			this.labelTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LabelTitle_MouseMove);
+			// 
 			// pBoxMinimize
 			// 
 			this.pBoxMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -607,6 +449,164 @@
 			this.toolTip1.SetToolTip(this.pBoxClose, "ListFusen2 を終了します");
 			this.pBoxClose.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PBoxClose_MouseClick);
 			// 
+			// panelContent
+			// 
+			this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+			this.panelContent.Controls.Add(this.splitContainer1);
+			this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panelContent.Location = new System.Drawing.Point(4, 62);
+			this.panelContent.Name = "panelContent";
+			this.panelContent.Size = new System.Drawing.Size(676, 410);
+			this.panelContent.TabIndex = 2;
+			// 
+			// splitContainer1
+			// 
+			this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+			this.splitContainer1.Name = "splitContainer1";
+			// 
+			// splitContainer1.Panel1
+			// 
+			this.splitContainer1.Panel1.Controls.Add(this.treeView1);
+			this.splitContainer1.Panel1.Controls.Add(this.panelBlankRightL);
+			this.splitContainer1.Panel1.Controls.Add(this.panelBlankBottomR);
+			this.splitContainer1.Panel1.Controls.Add(this.panelBlankLeftL);
+			this.splitContainer1.Panel1.Controls.Add(this.panelBlankTopL);
+			this.splitContainer1.Panel1.Controls.Add(this.panelLabel3);
+			// 
+			// splitContainer1.Panel2
+			// 
+			this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
+			this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+			this.splitContainer1.Panel2.Controls.Add(this.panelBlankRightR);
+			this.splitContainer1.Panel2.Controls.Add(this.panelBlankBottomL);
+			this.splitContainer1.Panel2.Controls.Add(this.panelBlankLeftR);
+			this.splitContainer1.Panel2.Controls.Add(this.panelBlankTopR);
+			this.splitContainer1.Size = new System.Drawing.Size(676, 410);
+			this.splitContainer1.SplitterDistance = 200;
+			this.splitContainer1.TabIndex = 4;
+			// 
+			// treeView1
+			// 
+			this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+			this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.treeView1.Font = new System.Drawing.Font("メイリオ", 10F);
+			this.treeView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(185)))), ((int)(((byte)(180)))));
+			this.treeView1.FullRowSelect = true;
+			this.treeView1.HideSelection = false;
+			this.treeView1.Indent = 19;
+			this.treeView1.LabelEdit = true;
+			this.treeView1.Location = new System.Drawing.Point(6, 9);
+			this.treeView1.Name = "treeView1";
+			this.treeView1.ShowLines = false;
+			this.treeView1.Size = new System.Drawing.Size(190, 392);
+			this.treeView1.TabIndex = 2;
+			this.treeView1.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.TreeView1_AfterLabelEdit);
+			this.treeView1.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.TreeView1_BeforeSelect);
+			this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeView1_AfterSelect);
+			this.treeView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TreeView1_KeyDown);
+			// 
+			// panelBlankRightL
+			// 
+			this.panelBlankRightL.Dock = System.Windows.Forms.DockStyle.Right;
+			this.panelBlankRightL.Location = new System.Drawing.Point(196, 9);
+			this.panelBlankRightL.Name = "panelBlankRightL";
+			this.panelBlankRightL.Size = new System.Drawing.Size(4, 392);
+			this.panelBlankRightL.TabIndex = 3;
+			// 
+			// panelBlankBottomR
+			// 
+			this.panelBlankBottomR.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.panelBlankBottomR.Location = new System.Drawing.Point(6, 401);
+			this.panelBlankBottomR.Name = "panelBlankBottomR";
+			this.panelBlankBottomR.Size = new System.Drawing.Size(194, 9);
+			this.panelBlankBottomR.TabIndex = 3;
+			// 
+			// panelBlankLeftL
+			// 
+			this.panelBlankLeftL.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelBlankLeftL.Location = new System.Drawing.Point(5, 9);
+			this.panelBlankLeftL.Name = "panelBlankLeftL";
+			this.panelBlankLeftL.Size = new System.Drawing.Size(1, 401);
+			this.panelBlankLeftL.TabIndex = 1;
+			// 
+			// panelBlankTopL
+			// 
+			this.panelBlankTopL.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelBlankTopL.Location = new System.Drawing.Point(5, 0);
+			this.panelBlankTopL.Name = "panelBlankTopL";
+			this.panelBlankTopL.Size = new System.Drawing.Size(195, 9);
+			this.panelBlankTopL.TabIndex = 1;
+			// 
+			// panelLabel3
+			// 
+			this.panelLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(92)))), ((int)(((byte)(55)))));
+			this.panelLabel3.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelLabel3.Location = new System.Drawing.Point(0, 0);
+			this.panelLabel3.Name = "panelLabel3";
+			this.panelLabel3.Size = new System.Drawing.Size(5, 410);
+			this.panelLabel3.TabIndex = 0;
+			// 
+			// textBox1
+			// 
+			this.textBox1.AcceptsTab = true;
+			this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
+			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBox1.Font = new System.Drawing.Font("メイリオ", 9.75F);
+			this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(185)))), ((int)(((byte)(180)))));
+			this.textBox1.Location = new System.Drawing.Point(4, 9);
+			this.textBox1.MaxLength = 200000;
+			this.textBox1.Multiline = true;
+			this.textBox1.Name = "textBox1";
+			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+			this.textBox1.Size = new System.Drawing.Size(456, 392);
+			this.textBox1.TabIndex = 2;
+			this.textBox1.WordWrap = false;
+			this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+			this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox1_KeyDown);
+			this.textBox1.Leave += new System.EventHandler(this.TextBox1_Leave);
+			// 
+			// panelBlankRightR
+			// 
+			this.panelBlankRightR.Dock = System.Windows.Forms.DockStyle.Right;
+			this.panelBlankRightR.Location = new System.Drawing.Point(460, 9);
+			this.panelBlankRightR.Name = "panelBlankRightR";
+			this.panelBlankRightR.Size = new System.Drawing.Size(12, 392);
+			this.panelBlankRightR.TabIndex = 3;
+			// 
+			// panelBlankBottomL
+			// 
+			this.panelBlankBottomL.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.panelBlankBottomL.Location = new System.Drawing.Point(4, 401);
+			this.panelBlankBottomL.Name = "panelBlankBottomL";
+			this.panelBlankBottomL.Size = new System.Drawing.Size(468, 9);
+			this.panelBlankBottomL.TabIndex = 3;
+			// 
+			// panelBlankLeftR
+			// 
+			this.panelBlankLeftR.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelBlankLeftR.Location = new System.Drawing.Point(0, 9);
+			this.panelBlankLeftR.Name = "panelBlankLeftR";
+			this.panelBlankLeftR.Size = new System.Drawing.Size(4, 401);
+			this.panelBlankLeftR.TabIndex = 1;
+			// 
+			// panelBlankTopR
+			// 
+			this.panelBlankTopR.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelBlankTopR.Location = new System.Drawing.Point(0, 0);
+			this.panelBlankTopR.Name = "panelBlankTopR";
+			this.panelBlankTopR.Size = new System.Drawing.Size(472, 9);
+			this.panelBlankTopR.TabIndex = 1;
+			// 
+			// toolTip1
+			// 
+			this.toolTip1.AutoPopDelay = 10000;
+			this.toolTip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(22)))));
+			this.toolTip1.InitialDelay = 650;
+			this.toolTip1.ReshowDelay = 100;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -630,14 +630,14 @@
 			this.panelButton.ResumeLayout(false);
 			this.panelUP.ResumeLayout(false);
 			this.panelUP.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pBoxMinimize)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pBoxClose)).EndInit();
 			this.panelContent.ResumeLayout(false);
 			this.splitContainer1.Panel1.ResumeLayout(false);
 			this.splitContainer1.Panel2.ResumeLayout(false);
 			this.splitContainer1.Panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
 			this.splitContainer1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pBoxMinimize)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pBoxClose)).EndInit();
 			this.ResumeLayout(false);
 
 		}
