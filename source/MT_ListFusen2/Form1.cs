@@ -1187,6 +1187,17 @@ namespace MT_ListFusen2
 			// 保存
 			if (e.Control && e.KeyCode == Keys.S)
 			{
+				// 選択ノードの取得
+				var tn = treeView1.SelectedNode;
+				// ノード削除時に例外が発生するのでその対処
+				if (tn != null)
+				{
+					// 選択ノードのメモオブジェクトを取得
+					Memo memo = (Memo)tn.Tag;
+					// メモの内容を保存
+					memo.Text = this.textBox1.Text;
+				}
+
 				// XMLファイルに保存
 				XmlSave(Settings.FILEPATH_XML);
 				e.SuppressKeyPress = true;
