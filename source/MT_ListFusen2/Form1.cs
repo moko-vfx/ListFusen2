@@ -1202,6 +1202,13 @@ namespace MT_ListFusen2
 				XmlSave(Settings.FILEPATH_XML);
 				e.SuppressKeyPress = true;
 			}
+
+			// テキスト全選択
+			if (e.Control && e.KeyCode == Keys.A)
+			{
+				textBox1.SelectAll();
+				e.SuppressKeyPress = true;
+			}
 		}
 		// ショートカットキー：TreeView
 		private void TreeView1_KeyDown(object sender, KeyEventArgs e)
