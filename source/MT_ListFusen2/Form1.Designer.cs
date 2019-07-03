@@ -419,7 +419,7 @@
 			this.labelTitle.Name = "labelTitle";
 			this.labelTitle.Size = new System.Drawing.Size(115, 14);
 			this.labelTitle.TabIndex = 1;
-			this.labelTitle.Text = "L I S T  F U S E N 2 .05";
+			this.labelTitle.Text = "L I S T  F U S E N 2 .06";
 			this.labelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LabelTitle_MouseDown);
 			this.labelTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LabelTitle_MouseMove);
 			// 

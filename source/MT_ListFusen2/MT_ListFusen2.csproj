@@ -7,7 +7,7 @@
     <ProjectGuid>{A3CAAA58-68EF-4313-B522-30707BD0A758}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MT_ListFusen2</RootNamespace>
-    <AssemblyName>ListFusen2_05</AssemblyName>
+    <AssemblyName>ListFusen2_06</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

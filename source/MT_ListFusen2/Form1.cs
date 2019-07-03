@@ -1157,14 +1157,28 @@ namespace MT_ListFusen2
 			// ツール設定の出力
 			try
 			{
-				// メインウインドウの位置とサイズの代入
-				Settings.winPosX = this.Left;
-				Settings.winPosY = this.Top;
-				Settings.winSizeX = this.Width;
-				Settings.winSizeY = this.Height;
+				// 最小化状態か判定
+				if (this.WindowState == FormWindowState.Minimized)
+				{
 
-				// SplitContainerの位置の代入
-				Settings.splitDistance = this.splitContainer1.SplitterDistance;
+				}
+				// 最大化状態か判定
+				else if (this.WindowState == FormWindowState.Maximized)
+				{
+
+				}
+				// どちらでも無い
+				else
+				{
+					// メインウインドウの位置とサイズの代入
+					Settings.winPosX = this.Left;
+					Settings.winPosY = this.Top;
+					Settings.winSizeX = this.Width;
+					Settings.winSizeY = this.Height;
+
+					// SplitContainerの位置の代入
+					Settings.splitDistance = this.splitContainer1.SplitterDistance;
+				}
 
 				// 最後に選択していたノードのIndexを取得
 				GetSelNodeIndex();
