@@ -1144,6 +1144,15 @@ namespace MT_ListFusen2
 		// ボタン：フォーム最小化
 		private void PBoxMinimize_MouseClick(object sender, MouseEventArgs e)
 		{
+			// メインウインドウの位置とサイズの代入
+			Settings.winPosX = this.Left;
+			Settings.winPosY = this.Top;
+			Settings.winSizeX = this.Width;
+			Settings.winSizeY = this.Height;
+
+			// SplitContainerの位置の代入
+			Settings.splitDistance = this.splitContainer1.SplitterDistance;
+
 			this.WindowState = FormWindowState.Minimized;
 		}
 		// ボタン：フォーム終了
@@ -1182,6 +1191,9 @@ namespace MT_ListFusen2
 
 				// 最後に選択していたノードのIndexを取得
 				GetSelNodeIndex();
+
+				// アプリケーションの設定を保存
+				Properties.Settings.Default.Save();
 
 				// 設定ファイルの出力
 				Settings.OutputSettings();

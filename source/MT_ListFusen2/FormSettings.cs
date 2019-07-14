@@ -94,6 +94,9 @@ namespace MT_ListFusen2
 		// ボタン：TextBoxのフォントスタイルの変更
 		private void ButtonFStyleTB_Click(object sender, EventArgs e)
 		{
+			// 現在のフォント設定を入れる
+			fontDialogTB.Font = fontTB;
+
 			try
 			{
 				// フォント設定ダイアログを表示する
@@ -128,6 +131,9 @@ namespace MT_ListFusen2
 		// ボタン：TreeViewのフォントスタイルの変更
 		private void ButtonFStyleTV_Click(object sender, EventArgs e)
 		{
+			// 現在のフォント設定を入れる
+			fontDialogTV.Font = fontTV;
+
 			try
 			{
 				// フォント設定ダイアログを表示する

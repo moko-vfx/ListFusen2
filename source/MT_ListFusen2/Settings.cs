@@ -223,10 +223,42 @@ namespace MT_ListFusen2
 			// 1～4 ウインドウの表示位置と大きさ
 			try
 			{
-				winPosX =	int.Parse(list[1]);
-				winPosY =	int.Parse(list[2]);
-				winSizeX =	int.Parse(list[3]);
-				winSizeY =	int.Parse(list[4]);
+				// 0以下なら0にする X
+				if (int.Parse(list[1]) < 0)
+				{
+					winPosX = 0;
+				}
+				else
+				{
+					winPosX = int.Parse(list[1]);
+				}
+				// 0以下なら0にする Y
+				if (int.Parse(list[2]) < 0)
+				{
+					winPosY = 0;
+				}
+				else
+				{
+					winPosY = int.Parse(list[2]);
+				}
+				// 526以下なら526にする X
+				if (int.Parse(list[3]) < 526)
+				{
+					winSizeX = 526;
+				}
+				else
+				{
+					winSizeX = int.Parse(list[3]);
+				}
+				// 220以下なら220にする Y
+				if (int.Parse(list[4]) < 220)
+				{
+					winSizeY = 220;
+				}
+				else
+				{
+					winSizeY = int.Parse(list[4]);
+				}
 			}
 			catch (Exception)
 			{
@@ -239,7 +271,14 @@ namespace MT_ListFusen2
 			// 5 画面分割ラインの位置
 			try
 			{
-				splitDistance = int.Parse(list[5]);
+				if (int.Parse(list[5]) < 50)
+				{
+					splitDistance = 50;
+				}
+				else
+				{
+					splitDistance = int.Parse(list[5]);
+				}
 			}
 			catch (Exception)
 			{
